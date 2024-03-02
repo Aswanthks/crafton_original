@@ -9,5 +9,5 @@ import 'package:crafton_original/Modules/auth/register.dart';
 
 void main() {
   runApp(MaterialApp(
-      home: ()));
+      home: register()));
 }

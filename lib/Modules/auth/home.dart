@@ -79,10 +79,22 @@ class home extends StatelessWidget {
                       height: 180,
                       width: 200,
                       decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            offset: const Offset(0, 5),
+                            color: Theme.of(context).primaryColorLight.withOpacity(.8),
+                            spreadRadius: 5,
+                            blurRadius: 5
+
+                          )
+
+                        ],
                         border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.only(
                           bottomRight: Radius.circular(30),
                           bottomLeft: Radius.circular(30),
+
+
                         ),
                       ),
                       child: Padding(

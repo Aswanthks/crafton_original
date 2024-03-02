@@ -1,3 +1,5 @@
+import 'package:crafton_original/Modules/auth/home.dart';
+import 'package:crafton_original/Modules/auth/usersignup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +9,7 @@ class screen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return  Scaffold( backgroundColor: Colors.grey,
+    return  Scaffold( backgroundColor: Colors.white,
       body: Container(
         color: Colors.white70,
         height: 800,
@@ -66,23 +68,28 @@ class screen1 extends StatelessWidget {
               width: 300,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => home(),));
+                },
                 child: Text("Login",style: TextStyle(color: Colors.white),),
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             Container(
+              padding: EdgeInsets.only(right: 20),
               height: 50,
               width: 400,
               margin: EdgeInsets.only(left: 75),
               child: Row(
                 children: [
                   Text("Dont have an account?"),
-                  SizedBox(width: 10),
+
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => usersignup(),));
+
+                    },
                     child: Text(
-                      "Click here to register",
+                      " Register",
                       style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                     ),
                   ),

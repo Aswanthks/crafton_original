@@ -25,11 +25,7 @@ class register extends StatelessWidget {
                 height: 200,
                 width: 200,
                 decoration: BoxDecoration(
-                  image: const DecorationImage(
-                    image: NetworkImage(
-                        'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png'),
-                    fit: BoxFit.cover,
-                  ),
+
 
 
                   border: Border.all(

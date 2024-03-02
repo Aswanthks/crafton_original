@@ -1,6 +1,6 @@
 
 import 'package:crafton_original/Modules/auth/home.dart';
-import 'package:crafton_original/Modules/auth/reg2.dart';
+
 import 'package:crafton_original/Modules/auth/screen1.dart';
 import 'package:crafton_original/Modules/auth/usersignup.dart';
 
@@ -10,5 +10,5 @@ import 'package:crafton_original/Modules/auth/register.dart';
 
 void main() {
   runApp(MaterialApp(
-      home: reg2()));
+      home: register()));
 }

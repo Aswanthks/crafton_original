@@ -1,4 +1,5 @@
 import 'package:crafton_original/Modules/auth/home.dart';
+import 'package:crafton_original/Modules/auth/register.dart';
 import 'package:crafton_original/Modules/auth/usersignup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -87,7 +88,7 @@ class screen1 extends StatelessWidget {
                   Text("Dont have an account?"),
 
                   TextButton(
-                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => usersignup(),));
+                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => register(),));
 
                     },
                     child: Text(

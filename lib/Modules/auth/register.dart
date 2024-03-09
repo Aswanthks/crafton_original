@@ -1,3 +1,5 @@
+import 'package:crafton_original/Modules/auth/studentsignup.dart';
+import 'package:crafton_original/Modules/auth/usersignup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -24,6 +26,7 @@ class register extends StatelessWidget {
                 margin: EdgeInsets.only(left: 125),
                 height: 200,
                 width: 200,
+
                 decoration: BoxDecoration(
 
 
@@ -55,8 +58,11 @@ class register extends StatelessWidget {
                 ),
                 child: Column(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.account_box)
-                    
+                    Icon(Icons.people),
+                    SizedBox(height: 5,),
+                    TextButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => studentsignup(),));
+                    }, child: Text("STUDENT",style: TextStyle(color: Colors.blue),)
+                    )
                   ],                ),
 
 
@@ -95,11 +101,19 @@ class register extends StatelessWidget {
                     ), //BoxShadow
                   ],
                 ),
+                  child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                      Icon(Icons.people_alt),
+                  SizedBox(height: 5,),
+                  TextButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => usersignup(),));
 
+                  }, child: Text("USER",style: TextStyle(color: Colors.blue),),
+                  ),
+]
 
-              ),
+    ),),
             ],
 
-        ));
+        ),);
   }
 }
